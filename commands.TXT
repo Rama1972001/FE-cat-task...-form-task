@@ -1,0 +1,387 @@
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~
+$ pwd
+/c/Users/hamza
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~
+$ ls
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Documents/
+ Downloads/
+ Favorites/
+ IdeaProjects/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ MATLAB/
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ Pictures/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ SceneBuilder/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ anaconda3/
+ ansel/
+ course-git-blog-project/
+ db/
+ demo/
+ demo1/
+ eclipse/
+ eclipse-workspace/
+ final/
+ hospitalProject/
+ incremental_db/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ rama1/
+ rm/
+ rm1/
+ runtime-New_configuration/
+ source/
+ wekafiles/
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~
+$ cd Downloads
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads
+$ cd finalllll
+bash: cd: finalllll: No such file or directory
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads
+$ cd finallllly
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/hamza/Downloads/finallllly/.git/
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        a.TXT
+        b.TXT
+        c.TXT
+
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (master)
+$ git add .
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (master)
+$ git commit -m "first commit"
+[master (root-commit) 53dccab] first commit
+ 4 files changed, 1 insertion(+)
+ create mode 100644 .gitignore
+ create mode 100644 a.TXT
+ create mode 100644 b.TXT
+ create mode 100644 c.TXT
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (master)
+$ echo " love the life you live">a.txt
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (master)
+$ git add a.txt
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (master)
+$ git commit -m "second commit"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   a.TXT
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (master)
+$ git commit -am "second commit"
+warning: in the working copy of 'a.TXT', LF will be replaced by CRLF the next time Git touches it
+[master 1bbe952] second commit
+ 1 file changed, 1 insertion(+)
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (master)
+$ echo "life is challenge!">b.txt
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (master)
+$ git add b.txt
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (master)
+$ git commit -am "3rd commit"
+warning: in the working copy of 'b.TXT', LF will be replaced by CRLF the next time Git touches it
+[master 0bd9da4] 3rd commit
+ 1 file changed, 1 insertion(+)
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (master)
+$ git branch updateRight
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (master)
+$ git branch updateLeft
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (master)
+$  get checkout updateRight
+bash: get: command not found
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (master)
+$ git checkout updateRight
+Switched to branch 'updateRight'
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (updateRight)
+$ git add d.txt
+fatal: pathspec 'd.txt' did not match any files
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (updateRight)
+$ git add d.txt
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (updateRight)
+$ echo "editing a.txt again!">a.txt
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (updateRight)
+$ git add a.txt
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (updateRight)
+$ git checkout updateRight
+Already on 'updateRight'
+M       a.TXT
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (updateRight)
+$ git commit -am"commit d.txt"
+warning: in the working copy of 'a.TXT', LF will be replaced by CRLF the next time Git touches it
+[updateRight e95ee08] commit d.txt
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (updateRight)
+$ git checkout updateRight
+Already on 'updateRight'
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (updateRight)
+$ git show branch:file
+fatal: invalid object name 'branch'.
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (updateRight)
+$ git ls-files
+.gitignore
+a.TXT
+b.TXT
+c.TXT
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (updateRight)
+$ git reset HEAD~
+Unstaged changes after reset:
+M       a.TXT
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (updateRight)
+$ git add d.txt
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (updateRight)
+$ git checkout updateRight
+Already on 'updateRight'
+M       a.TXT
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (updateRight)
+$ git ls-files
+.gitignore
+a.TXT
+b.TXT
+c.TXT
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (updateRight)
+$ git status
+On branch updateRight
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   a.TXT
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        d.TXT
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (updateRight)
+$ git checkout master
+Switched to branch 'master'
+M       a.TXT
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (master)
+$  git checkout updateLeft
+Switched to branch 'updateLeft'
+M       a.TXT
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (updateLeft)
+$ git add anything.txt
+fatal: pathspec 'anything.txt' did not match any files
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (updateLeft)
+$ git add anything.txt
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (updateLeft)
+$ echo " b.txt edited again!!">b.txt
+echo " b.txt edited againgit add anything.txt">b.txt
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (updateLeft)
+$ git checkout updateLeft
+Already on 'updateLeft'
+M       a.TXT
+M       b.TXT
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (updateLeft)
+$ git add b.txt
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (updateLeft)
+$ git checkout
+M       a.TXT
+M       b.TXT
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (updateLeft)
+$ git brranch mergeBranches
+git: 'brranch' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (updateLeft)
+$ git branch mergeBranches
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (updateLeft)
+$ git merge updateRight mergeBranches
+Already up to date.
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (updateLeft)
+$ git merge updateLeft mergeBranches
+Already up to date.
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (updateLeft)
+$ git checkout mergeBranches
+Switched to branch 'mergeBranches'
+M       a.TXT
+M       b.TXT
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (mergeBranches)
+$  git branch
+  master
+* mergeBranches
+  updateLeft
+  updateRight
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (mergeBranches)
+$ git remote add origin https://github.com/Rama1972001/new.git
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (mergeBranches)
+$ git remote -v
+origin  https://github.com/Rama1972001/new.git (fetch)
+origin  https://github.com/Rama1972001/new.git (push)
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (mergeBranches)
+$  git push origin master
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (10/10), 785 bytes | 261.00 KiB/s, done.
+Total 10 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/Rama1972001/new.git
+ * [new branch]      master -> master
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (mergeBranches)
+$ ls
+a.TXT  anything.TXT  b.TXT  c.TXT  d.TXT
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (mergeBranches)
+$ git commit -m " commit"
+On branch mergeBranches
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   a.TXT
+        modified:   b.TXT
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        anything.TXT
+        d.TXT
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (mergeBranches)
+$ git commit -am " commit"
+warning: in the working copy of 'a.TXT', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'b.TXT', LF will be replaced by CRLF the next time Git touches it
+[mergeBranches 3c0f0bc]  commit
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (mergeBranches)
+$  ls -a
+./  ../  .git/  .gitignore  a.TXT  anything.TXT  b.TXT  c.TXT  d.TXT
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (mergeBranches)
+$ git push origin mergeBranches
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 397 bytes | 397.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'mergeBranches' on GitHub by visiting:
+remote:      https://github.com/Rama1972001/new/pull/new/mergeBranches
+remote:
+To https://github.com/Rama1972001/new.git
+ * [new branch]      mergeBranches -> mergeBranches
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (mergeBranches)
+$ git push origin updateLeft
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'updateLeft' on GitHub by visiting:
+remote:      https://github.com/Rama1972001/new/pull/new/updateLeft
+remote:
+To https://github.com/Rama1972001/new.git
+ * [new branch]      updateLeft -> updateLeft
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (mergeBranches)
+$ git push origin updateRight
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'updateRight' on GitHub by visiting:
+remote:      https://github.com/Rama1972001/new/pull/new/updateRight
+remote:
+To https://github.com/Rama1972001/new.git
+ * [new branch]      updateRight -> updateRight
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (mergeBranches)
+$ git push -u origin updateRight
+Everything up-to-date
+branch 'updateRight' set up to track 'origin/updateRight'.
+
+hamza@DESKTOP-UQHU4L2 MINGW64 ~/Downloads/finallllly (mergeBranches)
+$
